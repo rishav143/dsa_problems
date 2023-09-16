@@ -1,0 +1,10 @@
+package dsa_problem_solution;
+
+public class _6_5_lastOccurrence {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

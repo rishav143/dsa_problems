@@ -4,7 +4,7 @@ public class _6_4_firstOccurence {
 	
 	public static void main(String[] args){
 		int arr[] = {10,10,10,20,20,30,40,50};
-		int x = 40;
+		int x = 10;
 		int low = 0;
 		int high = arr.length-1;
 		while(low<=high){
