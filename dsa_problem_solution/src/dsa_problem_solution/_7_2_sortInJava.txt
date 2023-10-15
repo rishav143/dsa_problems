@@ -1,0 +1,4 @@
+in java we have
+Arrays.sort -> we sort char int long using dual quick sort - string Integer and objects usings merege sort
+collection.sort -> merege sort
+//collection include non-primitive data types
