@@ -1,0 +1,13 @@
+In java we have
+Arrays.sort -> we sort char int long using dual quick sort - string Integer and objects usings merege sort
+collection.sort -> merege sort
+//collection include non-primitive data types
+
+date : 11 -05 - 2023
+stablity in algorithm :
+If our data is integer then we don't need stablity, its fine with unstable algorithm also. If we are working with 
+objects we must need stablity because many fields are there with numerical data.
+eg for stable algorithm : bubble sort, merge sort, insertion sort ... 
+eg for unstable algorithm : selection sort, quick sort, heap sort ... 
+
+
