@@ -1,4 +1,4 @@
-// this is stable sorting algoritm
+// this is instable sorting algoritm
 
 public class _7_3_selectionSort {
 
