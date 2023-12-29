@@ -1,7 +1,6 @@
-public class _7_6_mergeFunOfMergeSort {
+public class _7_7_mergeSort {
 
     public static void mergeSortArray(int[] res, int low, int mid, int high) {
-
         int n1 = mid - low + 1;
         int n2 = high - mid;
         int arr1[] = new int[n1];
@@ -15,7 +14,7 @@ public class _7_6_mergeFunOfMergeSort {
             arr2[j] = res[mid + 1 + j];
         }
 
-        int i = 0, j = 0, k = 0;
+        int i = 0, j = 0, k = low;
         while(i < arr1.length && j < arr2.length) {
             
             if(arr1[i] <= arr2[j]) {
@@ -42,15 +41,22 @@ public class _7_6_mergeFunOfMergeSort {
         }
     }
 
+    public static void mergeSort(int[] arr, int low, int high) {
+        if(high > low) {
+            int mid = low + (high - low)/2;
+            mergeSort(arr, low, mid);
+            mergeSort(arr, mid + 1, high);
+            mergeSortArray(arr, low, mid, high);
+        }
+    }
+
     public static void main(String[] args) {
-
-        int res[] = {10, 15, 20, 11, 12, 13, 30, 40, 70};
-        int low = 0, mid = 2, high = 8;
-
-        mergeSortArray(res, low, mid, high);
-
-        for(int i = 0; i < res.length; i++) {
-            System.out.print(res[i] + " ");
+        int arr[] ={1,3,5,3,2,8,9,0,1};
+        
+        mergeSort(arr, 0, arr.length - 1);
+        
+        for(int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
     }
 }

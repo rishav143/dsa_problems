@@ -33,7 +33,6 @@
 // }
 
 //binary approach for solving the minimum of the maximum solution in nlog(sum) times
-package dsa_problem_solution;
 
 public class allocateMinimumPages {
 
