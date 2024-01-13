@@ -1,0 +1,7 @@
+In best case :
+quick sort will give best case when partiton divide the array in two half. In that case 
+space complexity will be O(logn)
+
+In worst case :
+quick sort will give worst case when partition divides the array like (0,0) & (1, 4). In that case 
+space complexity will be O(n). It means recursion call stack will be equal to number of element in the array.

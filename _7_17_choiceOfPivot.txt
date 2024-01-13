@@ -1,0 +1,7 @@
+if array is already sorted then quick sort will always goes into worst case. This is called adversary analysis.
+the solution of this problem is we can take random number and swap it will left or right according to partition
+algorithm.
+
+p = random(l, r)
+swap(arr[l], arr[p]) -> hoare partition
+swap(arr[r], arr[p]) -> lomuto partition

@@ -23,12 +23,13 @@ class _7_12_lomutoPartition {
     }
 
     public static void main(String[] args) {
-        int arr[] = {50, 40, 30, 20};
+        int arr[] = {50, 40, 20, 30};
 
         int res = lomutoPartition(arr, 0, 3);
 
         for(int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]+" ");
         }
+        System.out.print(res);
     }
 }
